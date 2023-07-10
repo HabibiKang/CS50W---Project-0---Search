@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <img class="logo" src="google.png">
+            <a class="g_search" href="index.html">Google Search</a>
+            <title>Google Advanced Search</title>
+        </head>
+        <body>
+            <style>
+                .space {
+                    margin: 15px;
+                    padding: 10px;
+                }
+                .g_search {
+                    float: right;
+                    color: blue;
+                    text-align: center;
+                    font-size: 16;
+                }
+                .logo {
+                    float: left;
+                    height: 35px;
+                    width: 100px;
+                }
+                .adv_search {
+                    padding: 40px;
+                    font-family: sans-serif;
+                    font-size: 22px;
+                    font-weight: normal;
+                    color: RGB(246,96,45);
+                }
+                .find_pages {
+                    padding: 0px;
+                    margin: 10px;
+                    font-family: sans-serif;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-align: left;
+
+                }
+                .all {
+                    margin: 38px;
+                    font-family: sans-serif;
+                    font-size: 18px;
+                    font-weight: normal;
+                }
+                .searchbar {
+                    margin: 10px;
+                    width: 300px;
+                    height: 20px;
+                    padding: 2px;
+                    text-align: left;
+                    margin-bottom: 10;
+                }
+                .button {
+                    padding: 5px;
+                    background-color: blue;
+                    color: white;
+                }
+            </style>
+            <div class="space">
+            </div>
+                <h3 class="adv_search">Advanced Search</h3>
+                <hr>
+                <form action="https:/google.com/search">
+                    <table>
+                        <th class="find_pages">Find pages with...</th>
+                        <tr>
+                            <td class="all">all these words:</td>
+                            <td><input class="searchbar" type="text" name="as_q" placeholder=""></td>
+                            <br>
+                        </tr>
+                        <tr>
+                            <td class="all">this exact word or phrase:</td>
+                            <td><input class="searchbar" type="text" name="as_epq" placeholder=""></td>
+                            <br>
+                        </tr>
+                        <tr>
+                            <td class="all">any of these words:</td>
+                            <td><input class="searchbar" type="text" name="as_oq" placeholder=""></td>
+                            <br>
+                        </tr>
+                        <tr>
+                            <td class="all">none of these words:</td>
+                            <td><input class="searchbar" type="text" name="as_eq" placeholder=""></td>
+                        </tr>
+                        <div style ="position: fixed; left: 420px; margin-top: 225px;">
+                            <input class="button" type="submit" value="Advanced Search">
+                        </div>
+                    </table>
+                </form>
+        </body>
+</html>
